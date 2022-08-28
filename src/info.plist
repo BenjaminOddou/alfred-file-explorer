@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>239AEBB0-59B1-4A8B-B1CC-52257044CB41</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6661FD5C-56AC-442F-B501-641EE39D7D20</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>887A5B23-A6E8-47FC-BCF4-09569787C41A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6661FD5C-56AC-442F-B501-641EE39D7D20</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C12E1827-5064-443E-B392-3A3B3A72CED6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Benjamin Oddou</string>
+	<key>description</key>
+	<string>✍️ Grab instantly filenames in selected folder and rename them through Excel</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Filenames Renaming</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>getfilenames</string>
+				<key>subtext</key>
+				<string>Create an Excel Sheet with all Filenames of a Folder</string>
+				<key>text</key>
+				<string>Get Filenames in Excel</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>887A5B23-A6E8-47FC-BCF4-09569787C41A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>✍️ You can now edit new filenames in column B</string>
+				<key>title</key>
+				<string>Excel created !</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>-- Get filenames and extensions
+tell application "Finder"
+	activate
+	set _folder to choose folder with prompt "Select the folder with files you want to grab the names of" without multiple selections allowed
+	set _filenames to name of every file of _folder
+	set _extensions to name extension of every file of _folder
+end tell
+
+-- Collect names (filename - dot and extension)
+set _names to {}
+repeat with n from 1 to count of _filenames
+	
+	set _filename to item n of _filenames
+	set _extension to item n of _extensions
+	
+	if _extension is not "" then
+		set _length to (count of _filename) (*- (count of _extension) - 1*)
+		set end of _names to text 1 thru _length of _filename
+	else
+		set end of _names to _filename
+	end if
+	
+end repeat
+
+set theList to _names
+set num to 1
+tell application "Microsoft Excel"
+	make new workbook
+	tell column 5
+		set value of cell 1 to "⚠️ Final filenames should be written in Column B and have to contain filename extensions written in Column C"
+		set value of cell 2 to "ℹ️ Check out the instruction to use the Alfred workflow on https://github.com/BenjaminOddou/alfred-filenames-renaming" 
+		set value of cell 3 to "© Benjamin Oddou"
+		set color of font object of cell 1 to {255, 184, 51}
+		set color of font object of cell 2 to {77, 126, 249}
+		set bold of font object to true
+	end tell
+end tell
+repeat with thecurrentitem in theList
+	--write specs to excel file
+	tell application "Microsoft Excel"
+		tell row num
+			set _extension to item num of _extensions
+			set value of cell 1 to thecurrentitem
+			set value of cell 3 to "." &amp; _extension
+		end tell
+	end tell
+	
+	--incremental counter for next excel row
+	set num to num + 1
+	
+end repeat
+
+tell application "Microsoft Excel"
+	tell active sheet
+		autofit column "A:E"
+	end tell
+	activate
+end tell
+
+-- Done
+return _names</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6661FD5C-56AC-442F-B501-641EE39D7D20</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Finder"
+	activate
+end tell
+
+
+set SourceFolder to choose folder with prompt "Select the folder with files to rename" without multiple selections allowed
+
+set theWorkbook to choose file with prompt "Select the Excel file with old and new names" without multiple selections allowed
+
+
+tell application "Microsoft Excel"
+	open theWorkbook
+	tell the active sheet of the active workbook
+		-- returns a list of lists, top level rows, second level columns. In this case, each item is a list with item #1 being the original filename and item #2 being the new filename
+		set WorkbookData to the value of the used range
+	end tell
+	close the active workbook
+end tell
+
+tell application "Finder"
+	tell folder SourceFolder
+		try
+			repeat with aNamePair in WorkbookData
+				set the name of file (item 1 of aNamePair) to (item 2 of aNamePair)
+			end repeat
+		end try
+	end tell
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>✅ You can now check filenames in the targeted folder</string>
+				<key>title</key>
+				<string>Files Renamed !</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C12E1827-5064-443E-B392-3A3B3A72CED6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>renamefiles</string>
+				<key>subtext</key>
+				<string>Rename Files of a Folder from an Excel Sheet</string>
+				<key>text</key>
+				<string>Rename Files</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>239AEBB0-59B1-4A8B-B1CC-52257044CB41</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>✍️ Grab instantly filenames in selected folder and rename them through Excel
+
+🤖 Check the last verison of the workflow on GitHub : https://github.com/BenjaminOddou/alfred-filenames-renaming
+
+© Benjamin ODDOU</string>
+	<key>uidata</key>
+	<dict>
+		<key>239AEBB0-59B1-4A8B-B1CC-52257044CB41</key>
+		<dict>
+			<key>note</key>
+			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
+			<key>xpos</key>
+			<real>125</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
+		<key>6661FD5C-56AC-442F-B501-641EE39D7D20</key>
+		<dict>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>887A5B23-A6E8-47FC-BCF4-09569787C41A</key>
+		<dict>
+			<key>note</key>
+			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
+			<key>xpos</key>
+			<real>120</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</key>
+		<dict>
+			<key>xpos</key>
+			<real>600</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>C12E1827-5064-443E-B392-3A3B3A72CED6</key>
+		<dict>
+			<key>xpos</key>
+			<real>595</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
+		<key>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</key>
+		<dict>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
+</dict>
+</plist>
