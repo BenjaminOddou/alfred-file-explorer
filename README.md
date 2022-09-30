@@ -39,10 +39,16 @@ Welcome to the Filenames Renaming repository: **An Alfred Workflowk** ✨
 <img src="public/trigger_get_filenames-dark.png#gh-dark-mode-only" alt="Get File Names Sreenshot" width="600"/>
 <img src="public/trigger_get_filenames-light.png#gh-light-mode-only" alt="Get File Names Sreenshot" width="600"/>
 
-1. Launch the script with the trigger `getfilenames` and press ↩
-2. Select the folder with files you want to grab the names of
+1. Launch the script with the trigger `getfilenames`
+2. Select one research method :
+   1. Alfred Search = Search the folder by typing it's name in the alfred box
+   2. Finder = Select the folder through the finder app
 
-<img src="public/get_file_names.gif" alt="Gif Get File Names" width="600"/>
+**1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+<img src="public/alfred_search_1.gif" alt="Gif Rename files" width="600"/>
+
+**2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+<img src="public/finder_search_1.gif" alt="Gif Rename files" width="600"/>
 
 ### 2. Rename files of a selected folder from an Excel sheet
 
@@ -57,10 +63,15 @@ Welcome to the Filenames Renaming repository: **An Alfred Workflowk** ✨
     > 💡 **Recommended** : You can use a formula like `="filename"&C1` in `B1` cell to incorporate filename extensions
 2. Save your file on your machine with ⌘S or ⌘⇧S
 3. Launch the workflow with the trigger `renamefiles`
-4. Select the folder with files to rename
-5. Select the Excel file with old and new names
+4. Select one research method :
+   1. Alfred Search = Search the folder + excel file by typing their names in the alfred box
+   2. Finder = Select the folder + excel file through the finder app
 
-<img src="public/rename_files.gif" alt="Gif Rename files" width="600"/>
+**1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+<img src="public/alfred_search_2.gif" alt="Gif Rename files" width="600"/>
+
+**2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+<img src="public/finder_search_2.gif" alt="Gif Rename files" width="600"/>
 
 ## ⚖️ License
 
