@@ -45,9 +45,11 @@ Welcome to the Filenames Renaming repository: **An Alfred Workflowk** ✨
    2. Finder = Select the folder through the finder app
 
 **1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+
 <img src="public/alfred_search_1.gif" alt="Gif Rename files" width="600"/>
 
 **2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+
 <img src="public/finder_search_1.gif" alt="Gif Rename files" width="600"/>
 
 ### 2. Rename files of a selected folder from an Excel sheet
@@ -68,9 +70,11 @@ Welcome to the Filenames Renaming repository: **An Alfred Workflowk** ✨
    2. Finder = Select the folder + excel file through the finder app
 
 **1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+
 <img src="public/alfred_search_2.gif" alt="Gif Rename files" width="600"/>
 
 **2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+
 <img src="public/finder_search_2.gif" alt="Gif Rename files" width="600"/>
 
 ## ⚖️ License
