@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.benjamino.filenames_renaming</string>
-	<key>category</key>
-	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>1F7DB7DF-A578-413D-8715-A093531BC8A4</key>
@@ -208,7 +206,7 @@
 				<integer>68</integer>
 				<key>script</key>
 				<string>set query to "{query}"-- Get filenames and extensionstell application "Finder"	if (query = "finder") then		activate		set _folder to choose folder with prompt "Select the folder with files you want to grab the names of" without multiple selections allowed	else		set _folder to POSIX file query as alias	end if	set _filenames to name of every file of _folder	set _extensions to name extension of every file of _folderend tell
--- Collect names (filename - dot and extension)set _names to {}repeat with n from 1 to count of _filenames		set _filename to item n of _filenames	set _extension to item n of _extensions		if _extension is not "" then		set _length to (count of _filename) (*- (count of _extension) - 1*)		set end of _names to text 1 thru _length of _filename	else		set end of _names to _filename	end if	end repeatset theList to _namesset num to 1tell application "Microsoft Excel"	make new workbook	tell column 5		set value of cell 1 to "⚠️ Final filenames should be written in Column B and have to contain filename extensions written in Column C"		set value of cell 2 to "ℹ️ Check out the instruction to use the Alfred workflow on https://github.com/BenjaminOddou/alfred-filenames-renaming"		set value of cell 3 to "© Benjamin Oddou"		set color of font object of cell 1 to {255, 184, 51}		set color of font object of cell 2 to {77, 126, 249}		set bold of font object to true	end tellend tellrepeat with thecurrentitem in theList	--write specs to excel file	tell application "Microsoft Excel"		tell row num			set _extension to item num of _extensions			set value of cell 1 to thecurrentitem			set value of cell 3 to "." &amp; _extension		end tell	end tell		--incremental counter for next excel row	set num to num + 1	end repeattell application "Microsoft Excel"	tell active sheet		autofit column "A:E"	end tell	activateend tell-- Donereturn _names</string>
+-- Collect names (filename - dot and extension)set _names to {}repeat with n from 1 to count of _filenames		set _filename to item n of _filenames	set _extension to item n of _extensions		if _extension is not "" then		set _length to (count of _filename) (*- (count of _extension) - 1*)		set end of _names to text 1 thru _length of _filename	else		set end of _names to _filename	end if	end repeatset theList to _namesset num to 1tell application "Microsoft Excel"	make new workbook	tell column 5		set value of cell 1 to "⚠️ Final filenames should be written in Column B and have to contain filename extensions (written in Column C)"		set value of cell 2 to "ℹ️ Check out the instruction to use the Alfred workflow on https://github.com/BenjaminOddou/alfred-filenames-renaming"		set value of cell 3 to "© Benjamin Oddou"		set color of font object of cell 1 to {255, 184, 51}		set color of font object of cell 2 to {77, 126, 249}		set bold of font object to true	end tellend tellrepeat with thecurrentitem in theList	--write specs to excel file	tell application "Microsoft Excel"		tell row num			set _extension to item num of _extensions			set value of cell 1 to thecurrentitem			set value of cell 3 to "." &amp; _extension		end tell	end tell		--incremental counter for next excel row	set num to num + 1	end repeattell application "Microsoft Excel"	tell active sheet		autofit column "A:E"	end tell	activateend tell-- Donereturn _names</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -450,7 +448,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>set query to "{query}"if (query = "finder") then	tell application "Finder"		activate	end tell	set sourceFolder to choose folder with prompt "Select the folder with files to rename" without multiple selections allowed		set theWorkbook to choose file of type {"org.openxmlformats.spreadsheetml.sheet"} with prompt "Select the Excel file with old and new names" without multiple selections allowedelse	set sourceFolder to POSIX file (system attribute "_sourceFolder")	set theWorkbook to POSIX file (system attribute "_theWorkbook")end iftell application "Microsoft Excel"	open theWorkbook	tell the active sheet of the active workbook		-- returns a list of lists, top level rows, second level columns. In this case, each item is a list with item #1 being the original filename and item #2 being the new filename		set WorkbookData to the value of the used range	end tell	close the active workbookend telltell application "Finder"	tell folder sourceFolder		try			repeat with aNamePair in WorkbookData				set the name of file (item 1 of aNamePair) to (item 2 of aNamePair)			end repeat		end try	end tellend tellreturn POSIX path of sourceFolder</string>
+				<string>set query to "{query}"if (query = "finder") then	tell application "Finder"		activate	end tell	set sourceFolder to choose folder with prompt "Select the folder with files to rename" without multiple selections allowed		set theWorkbook to choose file of type {"org.openxmlformats.spreadsheetml.sheet"} with prompt "Select the Excel file with old and new names" without multiple selections allowedelse	set _decodedFolder to do shell script "echo " &amp; quoted form of (system attribute "_sourceFolder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"	set _decodedWorkbook to do shell script "echo " &amp; quoted form of (system attribute "_theWorkbook") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"	set sourceFolder to POSIX file _decodedFolder	set theWorkbook to POSIX file _decodedWorkbookend iftell application "Microsoft Excel"	open theWorkbook	tell the active sheet of the active workbook		-- returns a list of lists, top level rows, second level columns. In this case, each item is a list with item #1 being the original filename and item #2 being the new filename		set WorkbookData to the value of the used range	end tell	close the active workbookend telltell application "Finder"	tell folder sourceFolder		try			repeat with aNamePair in WorkbookData				set the name of file (item 1 of aNamePair) to (item 2 of aNamePair)			end repeat		end try	end tellend tellreturn POSIX path of sourceFolder</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -820,14 +818,14 @@
 		<key>46DE34F3-F785-4053-AFF9-F3F3C7FFD42E</key>
 		<dict>
 			<key>xpos</key>
-			<real>365</real>
+			<real>355</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
 		<key>637A6469-D4D6-45E6-8246-8D9398EC2C86</key>
 		<dict>
 			<key>xpos</key>
-			<real>545</real>
+			<real>565</real>
 			<key>ypos</key>
 			<real>525</real>
 		</dict>
@@ -841,7 +839,7 @@
 		<key>82F1BA85-110F-4514-8258-2A46617AD9B1</key>
 		<dict>
 			<key>xpos</key>
-			<real>665</real>
+			<real>685</real>
 			<key>ypos</key>
 			<real>555</real>
 		</dict>
@@ -871,7 +869,7 @@
 		<key>B2219B24-562D-4ED2-A697-5F5E903D2551</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>475</real>
 			<key>ypos</key>
 			<real>555</real>
 		</dict>
@@ -908,10 +906,8 @@
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
 </dict>
