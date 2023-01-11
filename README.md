@@ -1,81 +1,140 @@
-<img src="public/logo-dark.png#gh-dark-mode-only" alt="logo-dark" height="60"/>
-<img src="public/logo-light.png#gh-light-mode-only" alt="logo-light" height="60"/>
+<img src="public/logo-dark.png#gh-dark-mode-only" alt="logo-dark" height="55"/>
+<img src="public/logo-light.png#gh-light-mode-only" alt="logo-light" height="55"/>
 
-[![made with hearth by Benjamin Oddou](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-benjamin%20oddou-f4bd41.svg?style=flat)](https://github.com/BenjaminOddou)
-[![saythanks](https://img.shields.io/badge/say-thanks-7cd9f6.svg?style=flat)](https://saythanks.io/to/BenjaminOddou)
+[![made with hearth by Benjamin Oddou](https://img.shields.io/badge/made%20with%20%E2%99%A5%20by-benjamin%20oddou-F9DE64.svg?style=flat)](https://github.com/BenjaminOddou)
+[![saythanks](https://img.shields.io/badge/say-thanks-DEAA00.svg?style=flat)](https://saythanks.io/to/BenjaminOddou)
 
-Welcome to the Filenames Renaming repository: **An Alfred Workflowk** ✨
+Welcome to the Filenames Db repository: **An Alfred Workflowk** ✨
 
 ## ✅ Prerequisite
 
--  MacOS
-- ![Alfred logo](public/alfred_logo.svg) Alfred 5. Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is required to use workflows.
-- ![Excel logo](public/excel_logo.svg) Microsoft Excel
+* 🍎 MacOS.
+* 🎩 Alfred 5. Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is required to use workflows.
+* 📊 Any spreadsheet software which can open `.xlsx` files like [Microsoft Excel](https://apps.apple.com/fr/app/microsoft-excel/id462058435?mt=12), [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12), [WPSOffice](https://apps.apple.com/fr/app/wps-office-pdf-docs-sheets/id1468073139?mt=12), [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)...
+* ‼️ Requires **python 3.5** or above.
 
 ## ⬇️ Installation
 
-1. [Download the workflow](https://github.com/BenjaminOddou/alfred-filenames-renaming/releases/latest)
+1. [Download the workflow](https://github.com/BenjaminOddou/alfred-filenames-db/releases/latest)
 2. Double click the `.alfredworkflow` file to install
 
-<img src="public/workflow.png" alt="Workflow" width="600"/>
+![workflow](src/images/workflow.png)
 
-## 📖 Documentation
+## 🧙‍♂️ Invoke the Workflow
 
-> 🚨 **Important** 
-> 
-> This workflow doesn't convert files so take care to preserve original filename extensions
+There is 2 flows in this workflow :
 
-> 💡 **Recommended**
->
-> Show filename extensions on Mac (See [Documentation](https://support.apple.com/en-ie/guide/mac-help/mchlp2304/mac) from Apple)
-> 
-> - In the Finder <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> on your Mac, choose *Finder > Preferences*, then click *Advanced*.
-> - Select *Show all filename extensions*.
+1. The first one allow you to grab filenames. It can be triggered by writing `getfilenames` keyword.
+2. The fsecond allow you to rename files based on the data in a selected spreadsheet. You can invoke this flow with the `renamefiles` keyword.
 
-### 1. Get all filenames of a selected folder in an Excel file
+You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trigger 2` variables in workflow configuration panel [optionnal].
 
-> Trigger: `getfilenames`
+## 🧰 Setup the workflow
 
-<img src="public/trigger_get_filenames-dark.png#gh-dark-mode-only" alt="Get File Names Sreenshot" width="600"/>
-<img src="public/trigger_get_filenames-light.png#gh-light-mode-only" alt="Get File Names Sreenshot" width="600"/>
+### 👨‍💻 Install dependencies
 
-1. Launch the script with the trigger `getfilenames`
-2. Select one research method :
-   1. Alfred Search = Search the folder by typing it's name in the alfred box
-   2. Finder = Select the folder through the finder app
+1. ☑️ Install Python 3.5 or above. Check your version with :
 
-**1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+```shell
+python --version
+```
 
-<img src="public/alfred_search_1.gif" alt="Gif Rename files" width="600"/>
+2. ☑️ Install `pip` and check the installation :
 
-**2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+```shell
+pip --version
+```
 
-<img src="public/finder_search_1.gif" alt="Gif Rename files" width="600"/>
+Note that in some environments, use pip3 instead of pip. In some cases where multiple versions of python are installed, pip is for Python2 and pip3 is for Python3.
 
-### 2. Rename files of a selected folder from an Excel sheet
+3. install the `openpyxl` module with the following command :
 
-> Trigger: `renamefiles`
+```shell
+pip install openpyxl
+```
 
-<img src="public/trigger_rename_files-dark.png#gh-dark-mode-only" alt="Rename Files Screenshot" width="600"/>
-<img src="public/trigger_rename_files-light.png#gh-light-mode-only" alt="Rename Files Screenshot" width="600"/>
+* Check the `openpyxl` installation :
 
-1. In the Excel file created with the first script, input new names in Column B. 
-    > 🚨 **Important** : Don't forget filename extensions. 
-    > 
-    > 💡 **Recommended** : You can use a formula like `="filename"&C1` in `B1` cell to incorporate filename extensions
-2. Save your file on your machine with ⌘S or ⌘⇧S
-3. Launch the workflow with the trigger `renamefiles`
-4. Select one research method :
-   1. Alfred Search = Search the folder + excel file by typing their names in the alfred box
-   2. Finder = Select the folder + excel file through the finder app
+```shell
+pip list
+```
 
-**1. ![Alfred logo](public/alfred_logo.svg) With Alfred Search**
+### 📂 Data (XLSX files and Logs) folder
 
-<img src="public/alfred_search_2.gif" alt="Gif Rename files" width="600"/>
+❗ This variable cannot be empty. You can change it at your convenience in the workflow configuration panel.
 
-**2. <img src="public/finder_logo.png" height="12" width="12" alt="Finder logo.png"> With the Finder**
+It contains the xlsx files generated with the first flow + output logs of the the renaming operation generated by the second flow.
 
-<img src="public/finder_search_2.gif" alt="Gif Rename files" width="600"/>
+> 💡 Note that if you change the `Data folder` location after creating xlsx files and logs, you should probably move the files created along in the new folder.
+
+![data_folder](src/images/data_folder.png)
+
+## 🤖 Usage of the workflow
+
+### 📽️ Register filenames in a Spreadsheet
+
+Ensure that you select the right Level for the parameter `🔍 Depth of the search`. If you want to include files in subdirectories increase the depth level.
+
+If you select `Level 2️⃣` on the `~/Desktop` folder, here is an example of output you can have :
+
+![level_explanation](src/images/level_explanation.png)
+
+Optionally, you can write a regex expression to the `🚫 Reject Files` parameter. If the files matches you regex parameter, it will be excluded from the result. For example the following regex expression `^\.|^\~|desktop\.ini` will allow you to exclude common hidden and temp files.
+
+> 💡 Note that if you let it empty, all files will be listed
+
+#### Using Workflow File Filter
+
+Invoke the first flow with the `🕹️ Trigger 1` and search for the folder or the file you want to register the filenames of and press ⏎.
+
+![normal_search](src/images/normal_search.png)
+
+Alternatively, use the `Alfred Buffer` to select folder(s) and files(s) at the same time !! Basic commands are :
+
+* ⌥↑ to add a file to the buffer from Alfred's results.
+* ⌥↓ to add a file and move to the next item in your list of results.
+* ⌥← to remove the last item from the buffer.
+* ⌥→ to action all items in the buffer.
+* ⌥⌫ to remove all items from the buffer.
+
+To know more on how to use `Alfred Buffer`, follow this [link](https://www.alfredapp.com/help/features/file-search/#file-buffer).
+
+> 💡 Note that `Alfred Buffer` is preferred compare to the `{query}`, meaning that if you select a folder/file (by clicking on it or by pressing enter ⏎) that is not included in the buffer, **it will not be included in the xlsx file**.
+
+![alfred_buffer](src/images/alfred_buffer.png)
+
+#### Using Alfred Universal Actions
+
+Select the folder(s) / files(s) you want to grab the name of within alfred using `Quick Search` and run `Universal Actions` with → or ⌥→ if you used the `Alfred buffer`. Select "Get filenames in a spreadsheet".
+
+![universal_action](src/images/universal_action.png)
+
+If you want to know more on how to use Alfred Universal Actions, follow this [link](https://www.alfredapp.com/help/features/universal-actions/).
+
+### 💽 Renaming files
+
+Edit the **column D** of the xlsx generated file with new filenames and **include file extension**. Please, don't insert, delete, or edit any other columns and don't change the worksheet name `Terminal`. Don't forget to save the file with ⌘S. You can modify the xlsx filename as your convenience [optional].
+
+> 💡 Note that changing a file extension (png to jpg for example) can potentially break the file ! You can prevent this by setting the `🛡️ Safe renaming` parameter to `True 👍`. If you still want to change the file extension (jpg to JPEG for example), set the value to `False 👎`.
+
+Invoke the second flow with the `🕹️ Trigger 2` and select the xlsx file that should be used for the renaming operation and press ⏎. Hold the ⌘ key and press ⏎ to reveal the file in the finder. Alternatively you can open the file in the default application by pressing ⌥⏎.
+
+![rename_xlsx_selection](src/images/rename_xlsx_selection.png)
+
+Review your parameter and launch the renaming operation by selecting `✅ Rename Files` and press ⏎.
+
+> 💡 Note that if you want to change back from new names (in column D) to old names (columns B+C), you can set up the `🌊 Workflow renaming direction` parameter to `Reversed 👈`. Otherwise let it to `Normal 👉`.
+
+![rename_params](src/images/rename_params.png)
+
+#### Logs output
+
+Check the logs of your compression under the `📂 Data folder`. The log file can contains two types of messages : 
+
+1. If everything went well you'll have the following message : `INFO:root:✅ Renaming successful: {old_file} ⇒ {new_file}`
+2. If an error occurs, you'll have : `INFO:root:❌ Error renaming {old_file}: {error_description}`
+
+> 💡 Note that renaming operation will always create a log file that is named `{name_of_the_excel_file}{log_timestamp}.log`
 
 ## ⚖️ License
 

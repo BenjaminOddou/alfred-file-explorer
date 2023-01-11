@@ -4,25 +4,66 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.benjamino.filenames_renaming</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>1F7DB7DF-A578-413D-8715-A093531BC8A4</key>
+		<key>05067384-6E56-49D8-AB78-EB539486234B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6661FD5C-56AC-442F-B501-641EE39D7D20</string>
+				<string>A3526CBD-9533-44D0-B907-2396E49EA18C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0A8D8A3F-B8AA-4EF7-8176-21115A2407CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2B5ADE71-E282-4978-A497-9C29081B3EAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>15FBBF33-B6B5-4F9E-90D9-FEA44E70EBC1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>84C526AD-AEA0-441C-B93C-7399EBB9CE4D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2B5ADE71-E282-4978-A497-9C29081B3EAB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>60467E54-BD15-43F0-8AEA-AFC3EBED3F76</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>sourceoutputuid</key>
-				<string>1891A02A-6CF8-4BBC-B8F9-97BD1B09BF5B</string>
+				<string>40F21FC1-5AB6-4DD3-BBB7-CDD2D7B59B8F</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>900E2D4E-0BA1-4D88-8C02-EF97DF28CA04</string>
+				<string>750CC68C-DAAE-4AC8-9AEF-499087B70F0C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -31,23 +72,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3BC890FF-C2E7-4837-9BCA-42FDD2E137C3</key>
+		<key>4E412FC8-F6FA-4B41-B252-E6A1CDB68287</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>1891A02A-6CF8-4BBC-B8F9-97BD1B09BF5B</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>46DE34F3-F785-4053-AFF9-F3F3C7FFD42E</string>
+				<string>A54D7CC9-C124-42E5-92ED-353422580F46</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -56,11 +85,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>46DE34F3-F785-4053-AFF9-F3F3C7FFD42E</key>
+		<key>60467E54-BD15-43F0-8AEA-AFC3EBED3F76</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B2219B24-562D-4ED2-A697-5F5E903D2551</string>
+				<string>A3E381E1-D83A-4856-89AB-14B21BA9AC09</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -69,11 +98,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>637A6469-D4D6-45E6-8246-8D9398EC2C86</key>
+		<key>60DF12F8-6642-49C1-9A70-C95A0A11ED08</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>82F1BA85-110F-4514-8258-2A46617AD9B1</string>
+				<string>15FBBF33-B6B5-4F9E-90D9-FEA44E70EBC1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -82,11 +111,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6661FD5C-56AC-442F-B501-641EE39D7D20</key>
+		<key>6D8DB743-BFBD-4458-A95D-7B9131D25AEA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</string>
+				<string>0A8D8A3F-B8AA-4EF7-8176-21115A2407CB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -95,11 +124,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>82F1BA85-110F-4514-8258-2A46617AD9B1</key>
+		<key>84C526AD-AEA0-441C-B93C-7399EBB9CE4D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</string>
+				<string>BADCD6CB-25F0-4879-BF43-70266752368A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -108,11 +137,50 @@
 				<false/>
 			</dict>
 		</array>
-		<key>900E2D4E-0BA1-4D88-8C02-EF97DF28CA04</key>
+		<key>A3526CBD-9533-44D0-B907-2396E49EA18C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6661FD5C-56AC-442F-B501-641EE39D7D20</string>
+				<string>15FBBF33-B6B5-4F9E-90D9-FEA44E70EBC1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A3E381E1-D83A-4856-89AB-14B21BA9AC09</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0CE52CB-A03E-40BC-A15A-B101CC2CB479</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A54D7CC9-C124-42E5-92ED-353422580F46</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9792723-A233-475D-B69E-6023FBFE5803</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A73A1B8B-A497-4A3E-A1ED-6BE9C99F13A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E412FC8-F6FA-4B41-B252-E6A1CDB68287</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -125,7 +193,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3BC890FF-C2E7-4837-9BCA-42FDD2E137C3</string>
+				<string>6D8DB743-BFBD-4458-A95D-7B9131D25AEA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,51 +201,44 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>B2219B24-562D-4ED2-A697-5F5E903D2551</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>637A6469-D4D6-45E6-8246-8D9398EC2C86</string>
+				<string>BAF4A400-BC71-4A5B-91EE-E1FBA5274ED4</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Reveal File in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D35D94FE-2691-460B-8804-E1A4A10964E1</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open File in a SpreadSheet</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</key>
+		<key>B9792723-A233-475D-B69E-6023FBFE5803</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F80F23DF-473C-48B0-A381-3A8FBCD5F02F</string>
+				<string>60DF12F8-6642-49C1-9A70-C95A0A11ED08</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>40F21FC1-5AB6-4DD3-BBB7-CDD2D7B59B8F</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>D451B72C-8465-4E07-B0DA-16D0D5DFC21A</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1F7DB7DF-A578-413D-8715-A093531BC8A4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F80F23DF-473C-48B0-A381-3A8FBCD5F02F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C12E1827-5064-443E-B392-3A3B3A72CED6</string>
+				<string>A3526CBD-9533-44D0-B907-2396E49EA18C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -190,11 +251,11 @@
 	<key>createdby</key>
 	<string>Benjamin Oddou</string>
 	<key>description</key>
-	<string>✍️ Grab instantly filenames in selected folder and rename them through Excel</string>
+	<string>✍️ Grab instantly filenames and rename them with a Spreadsheet</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Filenames Renaming</string>
+	<string>Filenames Db</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -203,21 +264,20 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set query to "{query}"-- Get filenames and extensionstell application "Finder"	if (query = "finder") then		activate		set _folder to choose folder with prompt "Select the folder with files you want to grab the names of" without multiple selections allowed	else		set _folder to POSIX file query as alias	end if	set _filenames to name of every file of _folder	set _extensions to name extension of every file of _folderend tell
--- Collect names (filename - dot and extension)set _names to {}repeat with n from 1 to count of _filenames		set _filename to item n of _filenames	set _extension to item n of _extensions		if _extension is not "" then		set _length to (count of _filename) (*- (count of _extension) - 1*)		set end of _names to text 1 thru _length of _filename	else		set end of _names to _filename	end if	end repeatset theList to _namesset num to 1tell application "Microsoft Excel"	make new workbook	tell column 5		set value of cell 1 to "⚠️ Final filenames should be written in Column B and have to contain filename extensions (written in Column C)"		set value of cell 2 to "ℹ️ Check out the instruction to use the Alfred workflow on https://github.com/BenjaminOddou/alfred-filenames-renaming"		set value of cell 3 to "© Benjamin Oddou"		set color of font object of cell 1 to {255, 184, 51}		set color of font object of cell 2 to {77, 126, 249}		set bold of font object to true	end tellend tellrepeat with thecurrentitem in theList	--write specs to excel file	tell application "Microsoft Excel"		tell row num			set _extension to item num of _extensions			set value of cell 1 to thecurrentitem			set value of cell 3 to "." &amp; _extension		end tell	end tell		--incremental counter for next excel row	set num to num + 1	end repeattell application "Microsoft Excel"	tell active sheet		autofit column "A:E"	end tell	activateend tell-- Donereturn _names</string>
-				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>script</key>
 				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>getfilenames.py</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6661FD5C-56AC-442F-B501-641EE39D7D20</string>
+			<string>15FBBF33-B6B5-4F9E-90D9-FEA44E70EBC1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -231,121 +291,31 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>✍️ You can now edit new filenames in column B</string>
+				<string>{var:result2}</string>
 				<key>title</key>
-				<string>Excel created !</string>
+				<string>{var:result1}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</string>
+			<string>BADCD6CB-25F0-4879-BF43-70266752368A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>getfilenames</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>cat &lt;&lt; EOB
-{
-"items": [
-   {
-    "uid": "alfred search",
-    "title": "Alfred Search",
-    "subtitle": "Search Folder with Alfred",
-    "arg": "",
-    "autocomplete": "Alfred Search",
-    "icon": {
-        "tvpe": "fileicon",
-        "path": "46DE34F3-F785-4053-AFF9-F3F3C7FFD42E.png"
-      }
-    },
-    {
-    "uid": "finder",
-    "title": "Finder",
-    "subtitle": "Search Folder with the Finder",
-    "arg": "finder",
-    "autocomplete": "Finder",
-    "icon": {
-        "tvpe": "fileicon",
-        "path": "Finder.png"
-      }
-    }
-  ]
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Create an Excel Sheet with all Filenames of a Folder</string>
-				<key>title</key>
-				<string>Get Filenames in Excel</string>
-				<key>type</key>
-				<integer>5</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D451B72C-8465-4E07-B0DA-16D0D5DFC21A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>finder</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>1891A02A-6CF8-4BBC-B8F9-97BD1B09BF5B</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
+				<key>addfilestobuffer</key>
 				<false/>
+				<key>clearbuffer</key>
+				<true/>
+				<key>outputtype</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.action.buffer</string>
 			<key>uid</key>
-			<string>1F7DB7DF-A578-413D-8715-A093531BC8A4</string>
+			<string>A54D7CC9-C124-42E5-92ED-353422580F46</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -398,9 +368,23 @@
 						<key>words</key>
 						<true/>
 					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<true/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>.app</string>
+						<key>words</key>
+						<true/>
+					</dict>
 				</array>
 				<key>includesystem</key>
 				<false/>
+				<key>keyword</key>
+				<string>{var:trigger1}</string>
 				<key>limit</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -410,33 +394,148 @@
 				<key>sortmode</key>
 				<integer>0</integer>
 				<key>subtext</key>
-				<string>Loading Folders....</string>
+				<string>Create a spreadsheet with all filenames of selected elements</string>
 				<key>title</key>
-				<string>Find the Folder in Alfred</string>
+				<string>Get filenames in a spreadsheet</string>
 				<key>types</key>
-				<array>
-					<string>public.folder</string>
-				</array>
+				<array/>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
-			<string>900E2D4E-0BA1-4D88-8C02-EF97DF28CA04</string>
+			<string>A73A1B8B-A497-4A3E-A1ED-6BE9C99F13A7</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
+				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>_links_list</key>
+					<string>{var:_link_no_buffer}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>F80F23DF-473C-48B0-A381-3A8FBCD5F02F</string>
+			<string>60DF12F8-6642-49C1-9A70-C95A0A11ED08</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>result</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>84C526AD-AEA0-441C-B93C-7399EBB9CE4D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>40F21FC1-5AB6-4DD3-BBB7-CDD2D7B59B8F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>B9792723-A233-475D-B69E-6023FBFE5803</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>_link_no_buffer</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4E412FC8-F6FA-4B41-B252-E6A1CDB68287</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Get filenames in a spreadsheet</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>05067384-6E56-49D8-AB78-EB539486234B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>_links_list</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A3526CBD-9533-44D0-B907-2396E49EA18C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -446,20 +545,20 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set query to "{query}"if (query = "finder") then	tell application "Finder"		activate	end tell	set sourceFolder to choose folder with prompt "Select the folder with files to rename" without multiple selections allowed		set theWorkbook to choose file of type {"org.openxmlformats.spreadsheetml.sheet"} with prompt "Select the Excel file with old and new names" without multiple selections allowedelse	set _decodedFolder to do shell script "echo " &amp; quoted form of (system attribute "_sourceFolder") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"	set _decodedWorkbook to do shell script "echo " &amp; quoted form of (system attribute "_theWorkbook") &amp; " | iconv -f UTF-8-MAC -t MACROMAN"	set sourceFolder to POSIX file _decodedFolder	set theWorkbook to POSIX file _decodedWorkbookend iftell application "Microsoft Excel"	open theWorkbook	tell the active sheet of the active workbook		-- returns a list of lists, top level rows, second level columns. In this case, each item is a list with item #1 being the original filename and item #2 being the new filename		set WorkbookData to the value of the used range	end tell	close the active workbookend telltell application "Finder"	tell folder sourceFolder		try			repeat with aNamePair in WorkbookData				set the name of file (item 1 of aNamePair) to (item 2 of aNamePair)			end repeat		end try	end tellend tellreturn POSIX path of sourceFolder</string>
-				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>script</key>
 				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>renamefiles.py</string>
 				<key>type</key>
-				<integer>6</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</string>
+			<string>60467E54-BD15-43F0-8AEA-AFC3EBED3F76</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -473,14 +572,14 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>✅ You can now check filenames in the targeted folder</string>
+				<string>{var:result2}</string>
 				<key>title</key>
-				<string>Files Renamed !</string>
+				<string>{var:result1}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>C12E1827-5064-443E-B392-3A3B3A72CED6</string>
+			<string>B0CE52CB-A03E-40BC-A15A-B101CC2CB479</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -488,7 +587,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -498,9 +597,9 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>keyword</key>
-				<string>renamefiles</string>
+				<string>{var:trigger2}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -510,41 +609,15 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading Elements...</string>
 				<key>script</key>
-				<string>cat &lt;&lt; EOB
-{
-"items": [
-   {
-    "uid": "alfred search",
-    "title": "Alfred Search",
-    "subtitle": "Search Folder + Excel file with Alfred",
-    "arg": "",
-    "autocomplete": "Alfred Search",
-    "icon": {
-        "tvpe": "fileicon",
-        "path": "Folder_&amp;_Excel.png"
-      }
-    },
-    {
-    "uid": "finder",
-    "title": "Finder",
-    "subtitle": "Search Folder + Excel file with the Finder",
-    "arg": "finder",
-    "autocomplete": "Finder",
-    "icon": {
-        "tvpe": "fileicon",
-        "path": "Finder.png"
-      }
-    }
-  ]
-}</string>
+				<string>python3 list.py "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Rename Files of a Folder from an Excel Sheet</string>
+				<string>Rename files from a Spreadsheet</string>
 				<key>title</key>
 				<string>Rename Files</string>
 				<key>type</key>
@@ -562,6 +635,81 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Checking the xlsx file...</string>
+				<key>script</key>
+				<string>python3 info.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Review the xlsx data and confirm the lauch of the renaming operation</string>
+				<key>title</key>
+				<string>Confirm the renaming</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>{query}</string>
+				<key>usecustominputarg</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0A8D8A3F-B8AA-4EF7-8176-21115A2407CB</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>result</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>A3E381E1-D83A-4856-89AB-14B21BA9AC09</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -572,11 +720,11 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>finder</string>
+						<string>go</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
-						<string>1891A02A-6CF8-4BBC-B8F9-97BD1B09BF5B</string>
+						<string>40F21FC1-5AB6-4DD3-BBB7-CDD2D7B59B8F</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -587,328 +735,561 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>3BC890FF-C2E7-4837-9BCA-42FDD2E137C3</string>
+			<string>2B5ADE71-E282-4978-A497-9C29081B3EAB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>anchorfields</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>discardemptyarguments</key>
 				<false/>
-				<key>limit</key>
+				<key>outputas</key>
 				<integer>0</integer>
-				<key>runningsubtext</key>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>_rename_param</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>6D8DB743-BFBD-4458-A95D-7B9131D25AEA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
 				<string></string>
-				<key>scopes</key>
-				<array/>
-				<key>sortmode</key>
-				<integer>2</integer>
-				<key>subtext</key>
-				<string>Loading Excel Files....</string>
-				<key>title</key>
-				<string>Find the Excel Renaming file</string>
-				<key>types</key>
-				<array>
-					<string>org.openxmlformats.spreadsheetml.sheet</string>
-				</array>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>inboundconfig</key>
-			<dict>
-				<key>usecustominputarg</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>637A6469-D4D6-45E6-8246-8D9398EC2C86</string>
+			<string>BAF4A400-BC71-4A5B-91EE-E1FBA5274ED4</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>anchorfields</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>limit</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>No files renamed ❌</string>
+				<key>title</key>
+				<string>Operation cancelled !</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>750CC68C-DAAE-4AC8-9AEF-499087B70F0C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
 				<string></string>
-				<key>scopes</key>
-				<array/>
-				<key>sortmode</key>
-				<integer>0</integer>
-				<key>subtext</key>
-				<string>Loading Folders....</string>
-				<key>title</key>
-				<string>Find the Folder in Alfred</string>
-				<key>types</key>
-				<array>
-					<string>public.folder</string>
-				</array>
-				<key>withspace</key>
-				<false/>
+				<key>sourcefile</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>46DE34F3-F785-4053-AFF9-F3F3C7FFD42E</string>
+			<string>D35D94FE-2691-460B-8804-E1A4A10964E1</string>
 			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>_theWorkbook</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>82F1BA85-110F-4514-8258-2A46617AD9B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>_sourceFolder</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>B2219B24-562D-4ED2-A697-5F5E903D2551</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>✍️ Grab instantly filenames in selected folder and rename them through Excel
+	<string># 🎩 Alfred Filenames Db
 
-🤖 Check the last verison of the workflow on GitHub : https://github.com/BenjaminOddou/alfred-filenames-renaming
+✨ *Grab instantly filenames and rename them with a Spreadsheet* ✨
 
-© Benjamin ODDOU</string>
+![workflow](./images/workflow.png)
+
+## ✅ Prerequisite
+
+* 🍎 MacOS.
+* 🎩 Alfred 5. Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is required to use workflows.
+* 📊 Any spreadsheet software which can open `.xlsx` files like [Microsoft Excel](https://apps.apple.com/fr/app/microsoft-excel/id462058435?mt=12), [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12), [WPSOffice](https://apps.apple.com/fr/app/wps-office-pdf-docs-sheets/id1468073139?mt=12), [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)...
+* ‼️ Requires **python 3.5** or above.
+
+## 🧙‍♂️ Invoke the Workflow
+
+There is 2 flows in this workflow :
+
+1. The first one allow you to grab filenames. It can be triggered by writing `getfilenames` keyword.
+2. The fsecond allow you to rename files based on the data in a selected spreadsheet. You can invoke this flow with the `renamefiles` keyword.
+
+You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trigger 2` variables in workflow configuration panel [optionnal].
+
+## 🧰 Setup the workflow
+
+### 👨‍💻 Install dependencies
+
+1. ☑️ Install Python 3.5 or above. Check your version with :
+
+`python --version`
+
+2. ☑️ Install `pip` and check the installation :
+
+`pip --version`
+
+Note that in some environments, use pip3 instead of pip. In some cases where multiple versions of python are installed, pip is for Python2 and pip3 is for Python3.
+
+3. install the `openpyxl` module with the following command :
+
+`pip install openpyxl`
+
+* Check the `openpyxl` installation :
+
+`pip list`
+
+### 📂 Data (XLSX files and Logs) folder
+
+❗ This variable cannot be empty. You can change it at your convenience in the workflow configuration panel.
+
+It contains the xlsx files generated with the first flow + output logs of the the renaming operation generated by the second flow.
+
+💡 Note that if you change the `Data folder` location after creating xlsx files and logs, you should probably move the files created along in the new folder.
+
+![data_folder](./images/data_folder.png)
+
+## 🤖 Usage of the workflow
+
+### 📽️ Register filenames in a Spreadsheet
+
+Ensure that you select the right Level for the parameter `🔍 Depth of the search`. If you want to include files in subdirectories increase the depth level.
+
+If you select `Level 2️⃣` on the `~/Desktop` folder, here is an example of output you can have :
+
+![level_explanation](./images/level_explanation.png)
+
+Optionally, you can write a regex expression to the `🚫 Reject Files` parameter. If the files matches you regex parameter, it will be excluded from the result. For example the following regex expression `^\.|^\~|desktop\.ini` will allow you to exclude common hidden and temp files.
+
+💡 Note that if you let it empty, all files will be listed
+
+#### Using Workflow File Filter
+
+Invoke the first flow with the `🕹️ Trigger 1` and search for the folder or the file you want to register the filenames of and press ⏎.
+
+![normal_search](./images/normal_search.png)
+
+Alternatively, use the `Alfred Buffer` to select folder(s) and files(s) at the same time !! Basic commands are :
+
+* ⌥↑ to add a file to the buffer from Alfred's results.
+* ⌥↓ to add a file and move to the next item in your list of results.
+* ⌥← to remove the last item from the buffer.
+* ⌥→ to action all items in the buffer.
+* ⌥⌫ to remove all items from the buffer.
+
+To know more on how to use `Alfred Buffer`, follow this [link](https://www.alfredapp.com/help/features/file-search/#file-buffer).
+
+💡 Note that `Alfred Buffer` is preferred compare to the `{query}`, meaning that if you select a folder/file (by clicking on it or by pressing enter ⏎) that is not included in the buffer, **it will not be included in the xlsx file**.
+
+![alfred_buffer](./images/alfred_buffer.png)
+
+#### Using Alfred Universal Actions
+
+Select the folder(s) / files(s) you want to grab the name of within alfred using `Quick Search` and run `Universal Actions` with → or ⌥→ if you used the `Alfred buffer`. Select "Get filenames in a spreadsheet".
+
+![universal_action](./images/universal_action.png)
+
+If you want to know more on how to use Alfred Universal Actions, follow this [link](https://www.alfredapp.com/help/features/universal-actions/).
+
+### 💽 Renaming files
+
+Edit the **column D** of the xlsx generated file with new filenames and **include file extension**. Please, don't insert, delete, or edit any other columns and don't change the worksheet name `Terminal`. Don't forget to save the file with ⌘S. You can modify the xlsx filename as your convenience [optional].
+
+💡 Note that changing a file extension (png to jpg for example) can potentially break the file ! You can prevent this by setting the `🛡️ Safe renaming` parameter to `True 👍`. If you still want to change the file extension (jpg to JPEG for example), set the value to `False 👎`.
+
+Invoke the second flow with the `🕹️ Trigger 2` and select the xlsx file that should be used for the renaming operation and press ⏎. Hold the ⌘ key and press ⏎ to reveal the file in the finder. Alternatively you can open the file in the default application by pressing ⌥⏎.
+
+![rename_xlsx_selection](./images/rename_xlsx_selection.png)
+
+Review your parameter and launch the renaming operation by selecting `✅ Rename Files` and press ⏎.
+
+💡 Note that if you want to change back from new names (in column D) to old names (columns B+C), you can set up the `🌊 Workflow renaming direction` parameter to `Reversed 👈`. Otherwise let it to `Normal 👉`.
+
+![rename_params](./images/rename_params.png)
+
+#### Logs output
+
+Check the logs of your compression under the `📂 Data folder`. The log file can contains two types of messages : 
+
+1. If everything went well you'll have the following message : `INFO:root:✅ Renaming successful: {old_file} ⇒ {new_file}`
+2. If an error occurs, you'll have : `INFO:root:❌ Error renaming {old_file}: {error_description}`
+
+💡 Note that renaming operation will always create a log file that is named `{name_of_the_excel_file}{log_timestamp}.log`
+
+© Benjamin Oddou</string>
 	<key>uidata</key>
 	<dict>
-		<key>1F7DB7DF-A578-413D-8715-A093531BC8A4</key>
+		<key>05067384-6E56-49D8-AB78-EB539486234B</key>
+		<dict>
+			<key>note</key>
+			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-db</string>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>0A8D8A3F-B8AA-4EF7-8176-21115A2407CB</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>15FBBF33-B6B5-4F9E-90D9-FEA44E70EBC1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>710</real>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>2B5ADE71-E282-4978-A497-9C29081B3EAB</key>
+		<dict>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>485</real>
+		</dict>
+		<key>4E412FC8-F6FA-4B41-B252-E6A1CDB68287</key>
+		<dict>
+			<key>xpos</key>
+			<real>230</real>
+			<key>ypos</key>
+			<real>85</real>
+		</dict>
+		<key>60467E54-BD15-43F0-8AEA-AFC3EBED3F76</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<real>710</real>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>60DF12F8-6642-49C1-9A70-C95A0A11ED08</key>
+		<dict>
+			<key>xpos</key>
+			<real>585</real>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>6D8DB743-BFBD-4458-A95D-7B9131D25AEA</key>
+		<dict>
+			<key>xpos</key>
+			<real>230</real>
+			<key>ypos</key>
+			<real>495</real>
+		</dict>
+		<key>750CC68C-DAAE-4AC8-9AEF-499087B70F0C</key>
+		<dict>
+			<key>xpos</key>
+			<real>1000</real>
+			<key>ypos</key>
+			<real>600</real>
+		</dict>
+		<key>84C526AD-AEA0-441C-B93C-7399EBB9CE4D</key>
+		<dict>
+			<key>xpos</key>
+			<real>890</real>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>A3526CBD-9533-44D0-B907-2396E49EA18C</key>
+		<dict>
+			<key>xpos</key>
+			<real>585</real>
+			<key>ypos</key>
+			<real>290</real>
+		</dict>
+		<key>A3E381E1-D83A-4856-89AB-14B21BA9AC09</key>
+		<dict>
+			<key>xpos</key>
+			<real>890</real>
+			<key>ypos</key>
+			<real>480</real>
+		</dict>
+		<key>A54D7CC9-C124-42E5-92ED-353422580F46</key>
 		<dict>
 			<key>xpos</key>
 			<real>310</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>55</real>
 		</dict>
-		<key>3BC890FF-C2E7-4837-9BCA-42FDD2E137C3</key>
+		<key>A73A1B8B-A497-4A3E-A1ED-6BE9C99F13A7</key>
 		<dict>
+			<key>note</key>
+			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-db</string>
 			<key>xpos</key>
-			<real>255</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>405</real>
-		</dict>
-		<key>46DE34F3-F785-4053-AFF9-F3F3C7FFD42E</key>
-		<dict>
-			<key>xpos</key>
-			<real>355</real>
-			<key>ypos</key>
-			<real>525</real>
-		</dict>
-		<key>637A6469-D4D6-45E6-8246-8D9398EC2C86</key>
-		<dict>
-			<key>xpos</key>
-			<real>565</real>
-			<key>ypos</key>
-			<real>525</real>
-		</dict>
-		<key>6661FD5C-56AC-442F-B501-641EE39D7D20</key>
-		<dict>
-			<key>xpos</key>
-			<real>625</real>
-			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>82F1BA85-110F-4514-8258-2A46617AD9B1</key>
-		<dict>
-			<key>xpos</key>
-			<real>685</real>
-			<key>ypos</key>
-			<real>555</real>
-		</dict>
-		<key>900E2D4E-0BA1-4D88-8C02-EF97DF28CA04</key>
-		<dict>
-			<key>xpos</key>
-			<real>410</real>
-			<key>ypos</key>
-			<real>230</real>
-		</dict>
-		<key>A3AEED6E-DD5C-4B10-9EC2-C1C281E6B58F</key>
-		<dict>
-			<key>xpos</key>
-			<real>800</real>
-			<key>ypos</key>
-			<real>130</real>
+			<real>55</real>
 		</dict>
 		<key>AD104627-8DF7-43B7-B277-0738C2DA2EB7</key>
 		<dict>
 			<key>note</key>
-			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
+			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-db</string>
 			<key>xpos</key>
 			<real>40</real>
 			<key>ypos</key>
-			<real>385</real>
+			<real>465</real>
 		</dict>
-		<key>B2219B24-562D-4ED2-A697-5F5E903D2551</key>
+		<key>B0CE52CB-A03E-40BC-A15A-B101CC2CB479</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>1000</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>450</real>
 		</dict>
-		<key>C12E1827-5064-443E-B392-3A3B3A72CED6</key>
+		<key>B9792723-A233-475D-B69E-6023FBFE5803</key>
 		<dict>
 			<key>xpos</key>
-			<real>1130</real>
+			<real>480</real>
 			<key>ypos</key>
-			<real>370</real>
+			<real>75</real>
 		</dict>
-		<key>C2CDC2EC-E9A3-4D43-B109-69FF1C3C7E76</key>
+		<key>BADCD6CB-25F0-4879-BF43-70266752368A</key>
 		<dict>
 			<key>xpos</key>
-			<real>790</real>
+			<real>1000</real>
 			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>D451B72C-8465-4E07-B0DA-16D0D5DFC21A</key>
-		<dict>
-			<key>note</key>
-			<string>Please submit issues and feature requests at https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
-			<key>xpos</key>
 			<real>40</real>
-			<key>ypos</key>
-			<real>145</real>
 		</dict>
-		<key>F80F23DF-473C-48B0-A381-3A8FBCD5F02F</key>
+		<key>BAF4A400-BC71-4A5B-91EE-E1FBA5274ED4</key>
 		<dict>
 			<key>xpos</key>
-			<real>960</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>370</real>
+			<real>590</real>
+		</dict>
+		<key>D35D94FE-2691-460B-8804-E1A4A10964E1</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>715</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>~/Library/Application Support/Alfred/Workflow Data/com.benjamino.filenames_renaming</string>
+				<key>filtermode</key>
+				<integer>1</integer>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>The folder that holds all the generated .xlsx and .log files.</string>
+			<key>label</key>
+			<string>📂 Data Folder</string>
+			<key>type</key>
+			<string>filepicker</string>
+			<key>variable</key>
+			<string>data_folder</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>getfilenames</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Value of the first flow trigger.</string>
+			<key>label</key>
+			<string>🕹️ Trigger 1</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>trigger1</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>1</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Level 0️⃣</string>
+						<string>1</string>
+					</array>
+					<array>
+						<string>Level 1️⃣</string>
+						<string>2</string>
+					</array>
+					<array>
+						<string>Level 2️⃣</string>
+						<string>3</string>
+					</array>
+					<array>
+						<string>Level 3️⃣</string>
+						<string>4</string>
+					</array>
+					<array>
+						<string>Level 4️⃣</string>
+						<string>5</string>
+					</array>
+					<array>
+						<string>Level 5️⃣</string>
+						<string>6</string>
+					</array>
+					<array>
+						<string>Level 6️⃣</string>
+						<string>7</string>
+					</array>
+					<array>
+						<string>Level 7️⃣</string>
+						<string>8</string>
+					</array>
+					<array>
+						<string>Level 8️⃣</string>
+						<string>9</string>
+					</array>
+					<array>
+						<string>Level 9️⃣</string>
+						<string>10</string>
+					</array>
+					<array>
+						<string>Level 🔟</string>
+						<string>11</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>If you change this value, filenames in subdirectories will be listed.</string>
+			<key>label</key>
+			<string>🔍 Depth of the search</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>depth</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<false/>
+				<key>verticalsize</key>
+				<integer>3</integer>
+			</dict>
+			<key>description</key>
+			<string>Reject files that matches regex expression. Let it empty if you want to include all files. Here is a good way to exclude common hidden files : ^\.|^\~|desktop\.ini</string>
+			<key>label</key>
+			<string>🚫 Reject Files</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>reject_regex</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>renamefiles</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Value of the second trigger flow.</string>
+			<key>label</key>
+			<string>🕹️ Trigger 2</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>trigger2</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>True</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Yes 👍</string>
+						<string>True</string>
+					</array>
+					<array>
+						<string>No 👎</string>
+						<string></string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>If this is desactivated, you'll have the possibility to modify file extensions. This can be useful if you want to rename all your .jpg into .JPEG for example. Use it at your own risks.</string>
+			<key>label</key>
+			<string>🛡️ Safe renaming</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>safe_guard</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Normal 👉</string>
+						<string></string>
+					</array>
+					<array>
+						<string>Reversed 👈</string>
+						<string>True</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>If reversed is selected, new names (in column D), will be remaned backward to original names.</string>
+			<key>label</key>
+			<string>🌊 Workflow renaming direction</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>reverse_dir</string>
+		</dict>
+	</array>
 	<key>version</key>
-	<string>1.2</string>
+	<string>2.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/BenjaminOddou/alfred-filenames-renaming</string>
+	<string>https://github.com/BenjaminOddou/alfred-filenames-db</string>
 </dict>
 </plist>
