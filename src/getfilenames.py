@@ -2,7 +2,6 @@
 
 import os
 import re
-import time
 import datetime
 import openpyxl
 import subprocess

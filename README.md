@@ -18,16 +18,16 @@ Welcome to the Filenames Db repository: **An Alfred Workflowk** ✨
 1. [Download the workflow](https://github.com/BenjaminOddou/alfred-filenames-db/releases/latest)
 2. Double click the `.alfredworkflow` file to install
 
-![workflow](src/images/workflow.png)
+![workflow](src/images/workflow.webp)
 
 ## 🧙‍♂️ Invoke the Workflow
 
 There is 2 flows in this workflow :
 
-1. The first one allow you to grab filenames. It can be triggered by writing `getfilenames` keyword.
-2. The fsecond allow you to rename files based on the data in a selected spreadsheet. You can invoke this flow with the `renamefiles` keyword.
+1. The first one allows you to grab filenames. It can be triggered by writing `getfilenames` keyword.
+2. The second allows you to rename files based on the data in a selected spreadsheet. You can invoke this flow with the `renamefiles` keyword.
 
-You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trigger 2` variables in workflow configuration panel [optionnal].
+You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trigger 2` variables in workflow configuration panel [optionnal]. Please avoid putting the same trigger for the two flows.
 
 ## 🧰 Setup the workflow
 
@@ -39,26 +39,6 @@ You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trig
 python --version
 ```
 
-2. ☑️ Install `pip` and check the installation :
-
-```shell
-pip --version
-```
-
-Note that in some environments, use pip3 instead of pip. In some cases where multiple versions of python are installed, pip is for Python2 and pip3 is for Python3.
-
-3. install the `openpyxl` module with the following command :
-
-```shell
-pip install openpyxl
-```
-
-* Check the `openpyxl` installation :
-
-```shell
-pip list
-```
-
 ### 📂 Data (XLSX files and Logs) folder
 
 ❗ This variable cannot be empty. You can change it at your convenience in the workflow configuration panel.
@@ -67,7 +47,7 @@ It contains the xlsx files generated with the first flow + output logs of the th
 
 > 💡 Note that if you change the `Data folder` location after creating xlsx files and logs, you should probably move the files created along in the new folder.
 
-![data_folder](src/images/data_folder.png)
+![data_folder](src/images/data_folder.webp)
 
 ## 🤖 Usage of the workflow
 
@@ -77,7 +57,7 @@ Ensure that you select the right Level for the parameter `🔍 Depth of the sear
 
 If you select `Level 2️⃣` on the `~/Desktop` folder, here is an example of output you can have :
 
-![level_explanation](src/images/level_explanation.png)
+![level_explanation](src/images/level_explanation.webp)
 
 Optionally, you can write a regex expression to the `🚫 Reject Files` parameter. If the files matches you regex parameter, it will be excluded from the result. For example the following regex expression `^\.|^\~|desktop\.ini` will allow you to exclude common hidden and temp files.
 
@@ -87,7 +67,7 @@ Optionally, you can write a regex expression to the `🚫 Reject Files` paramete
 
 Invoke the first flow with the `🕹️ Trigger 1` and search for the folder or the file you want to register the filenames of and press ⏎.
 
-![normal_search](src/images/normal_search.png)
+![normal_search](src/images/normal_search.webp)
 
 Alternatively, use the `Alfred Buffer` to select folder(s) and files(s) at the same time !! Basic commands are :
 
@@ -101,13 +81,13 @@ To know more on how to use `Alfred Buffer`, follow this [link](https://www.alfre
 
 > 💡 Note that `Alfred Buffer` is preferred compare to the `{query}`, meaning that if you select a folder/file (by clicking on it or by pressing enter ⏎) that is not included in the buffer, **it will not be included in the xlsx file**.
 
-![alfred_buffer](src/images/alfred_buffer.png)
+![alfred_buffer](src/images/alfred_buffer.webp)
 
 #### Using Alfred Universal Actions
 
 Select the folder(s) / files(s) you want to grab the name of within alfred using `Quick Search` and run `Universal Actions` with → or ⌥→ if you used the `Alfred buffer`. Select "Get filenames in a spreadsheet".
 
-![universal_action](src/images/universal_action.png)
+![universal_action](src/images/universal_action.webp)
 
 If you want to know more on how to use Alfred Universal Actions, follow this [link](https://www.alfredapp.com/help/features/universal-actions/).
 
@@ -119,13 +99,13 @@ Edit the **column D** of the xlsx generated file with new filenames and **includ
 
 Invoke the second flow with the `🕹️ Trigger 2` and select the xlsx file that should be used for the renaming operation and press ⏎. Hold the ⌘ key and press ⏎ to reveal the file in the finder. Alternatively you can open the file in the default application by pressing ⌥⏎.
 
-![rename_xlsx_selection](src/images/rename_xlsx_selection.png)
+![rename_xlsx_selection](src/images/rename_xlsx_selection.webp)
 
 Review your parameter and launch the renaming operation by selecting `✅ Rename Files` and press ⏎.
 
 > 💡 Note that if you want to change back from new names (in column D) to old names (columns B+C), you can set up the `🌊 Workflow renaming direction` parameter to `Reversed 👈`. Otherwise let it to `Normal 👉`.
 
-![rename_params](src/images/rename_params.png)
+![rename_params](src/images/rename_params.webp)
 
 #### Logs output
 
