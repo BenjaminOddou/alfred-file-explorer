@@ -11,7 +11,7 @@ Welcome to the Filenames Db repository: **An Alfred Workflowk** ✨
 * 🍎 MacOS.
 * 🎩 Alfred 5. Note that the [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is required to use workflows.
 * 📊 Any spreadsheet software which can open `.xlsx` files like [Microsoft Excel](https://apps.apple.com/fr/app/microsoft-excel/id462058435?mt=12), [Numbers](https://apps.apple.com/us/app/numbers/id409203825?mt=12), [WPSOffice](https://apps.apple.com/fr/app/wps-office-pdf-docs-sheets/id1468073139?mt=12), [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)...
-* ‼️ Requires **python 3.5** or above.
+* ‼️ Requires **python 3.6** or above.
 
 ## ⬇️ Installation
 
@@ -33,7 +33,7 @@ You can change these values by changing the `🕹️ Trigger 1` or `🕹️ Trig
 
 ### 👨‍💻 Install dependencies
 
-1. ☑️ Install Python 3.5 or above. Check your version with :
+1. ☑️ Install Python 3.6 or above. Check your version with :
 
 ```shell
 python --version
