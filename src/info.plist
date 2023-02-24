@@ -1276,7 +1276,7 @@ Check the logs of your compression under the `📂 Data folder`. The log file ca
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/BenjaminOddou/alfred-filenames-db</string>
 </dict>

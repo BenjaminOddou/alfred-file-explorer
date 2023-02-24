@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2022 openpyxl
+# Copyright (c) 2010-2023 openpyxl
 
 from openpyxl.descriptors import (
     Bool,
@@ -25,7 +25,7 @@ class ChartsheetView(Serialisable):
                  tabSelected=None,
                  zoomScale=None,
                  workbookViewId=0,
-                 zoomToFit=None,
+                 zoomToFit=True,
                  extLst=None,
                  ):
         self.tabSelected = tabSelected

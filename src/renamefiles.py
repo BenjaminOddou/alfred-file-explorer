@@ -63,6 +63,6 @@ for old_name, new_name in zip(original_paths, output_paths):
 
 # Print the appropriate message
 if error_flag:
-    print("There were errors during the rename operation., Please check the log file for more information ⚠️")
+    print("⚠️ Warning !,One or more files weren't renamed correctly. Check the logs")
 else:
-    print("Process completed !, All files were successfully renamed ✅")
+    print("✅ Process completed !, All files were successfully renamed")

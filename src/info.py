@@ -33,7 +33,7 @@ output = {
             "arg": "",
             "autocomplete": "Don't continue ?",
             "icon": {
-                "path": "cross-icon.png"
+                "path": "icons/cross-icon.png"
             }
         },
         {
@@ -42,7 +42,7 @@ output = {
             "arg": "go",
             "autocomplete": "Rename files",
             "icon": {
-                "path": "check-icon.png"
+                "path": "icons/check-icon.png"
             }
         },
         {
@@ -51,7 +51,7 @@ output = {
             "arg": "",
             "autocomplete": "Safe renaming parameter",
             "icon": {
-                "path": "shield-icon.png"
+                "path": "icons/shield-icon.png"
             }
         },
         {
@@ -60,7 +60,7 @@ output = {
             "arg": "",
             "autocomplete": "Workflow renaming direction parameter",
             "icon": {
-                "path": "wave-icon.png"
+                "path": "icons/wave-icon.png"
             }
         },
         {
@@ -69,7 +69,7 @@ output = {
             "arg": "",
             "autocomplete": "Workflow renaming direction parameter",
             "icon": {
-                "path": "xlsx-icon.png"
+                "path": "icons/xlsx-icon.png"
             }
         },
         {
@@ -77,7 +77,7 @@ output = {
             "subtitle": "",
             "arg": "",
             "icon": {
-                "path": "info-icon.png"
+                "path": "icons/info-icon.png"
             }
         },
         {
@@ -85,7 +85,7 @@ output = {
             "subtitle": "",
             "arg": "",
             "icon": {
-                "path": "info-icon.png"
+                "path": "icons/info-icon.png"
             }
         },
     ]

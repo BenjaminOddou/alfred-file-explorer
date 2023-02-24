@@ -36,7 +36,7 @@ for file in files:
         "arg": f"{file},{os.path.basename(file)},{get_size_string(os.path.getsize(file))}",
         "autocomplete": os.path.basename(file),
         "icon": {
-            "path": "xlsx-icon.png"
+            "path": "icons/xlsx-icon.png"
         },
         "creation_time": creation_time.strftime("%d-%m-%Y %H:%M:%S"),
         "mods": {
