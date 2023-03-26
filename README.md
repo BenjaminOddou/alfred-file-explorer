@@ -16,7 +16,7 @@ Welcome to the File Explorer repository: **An Alfred Workflow** ✨
 
 ## ⬇️ Installation
 
-1. [Download the workflow](https://github.com/BenjaminOddou/alfred-filenames-db/releases/latest)
+1. [Download the workflow](https://github.com/BenjaminOddou/alfred-file-explorer/releases/latest)
 2. Double click the `.alfredworkflow` file to install
 
 ## 🧙‍♂️ Invoke the workflow
