@@ -9,8 +9,8 @@ data_folder = os.path.expanduser('~/Library/Application Support/Alfred/Workflow 
 depth = 1
 workflow_action = '_open'
 reject_regex = ''
-safe_guard = True
-reverse_dir = False
+safe_guard = True if os.environ['safe_guard'] == '1' else False
+reverse_dir = True if os.environ['reverse_dir'] == '1' else False
 max_rows = 1048575
 sound = 'Submarine'
 
@@ -27,14 +27,6 @@ default_list = [
     },
     {
         'title': 'reject_regex',
-    },
-    {
-        'title': 'safe_guard',
-        'func': eval
-    },
-    {
-        'title': 'reverse_dir',
-        'func': eval
     },
     {
         'title': 'max_rows',

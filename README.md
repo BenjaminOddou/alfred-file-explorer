@@ -78,7 +78,7 @@ If you want to know more on how to use Alfred Universal Actions, follow this [li
 
 Edit the **column D** of the xlsx generated file with new filenames and **include file extension**. Please, don't insert, delete, or edit any other columns.
 
-> Note that changing a file extension (png to jpg for example) can potentially break the file ! You can prevent this by setting the `🛡️ Safe renaming` parameter to `True 👍`. If you still want to change the file extension (jpg to JPEG for example), set the value to `False 👎`.
+> Note that changing a file extension (png to jpg for example) can potentially break the file ! You can prevent this by ticking the `🛡️ Safe renaming`. If you still want to change the file extension (jpg to JPEG for example), untick it.
 
 Invoke the second flow with the `🕹️ Trigger 2` and select the xlsx file that should be used for the renaming operation and press ⏎. Hold the ⌘ key and press ⏎ to reveal the file in the finder. Alternatively you can open the file in the default application by pressing ⌥⏎.
 
@@ -86,7 +86,7 @@ Invoke the second flow with the `🕹️ Trigger 2` and select the xlsx file tha
 
 Review your parameters and launch the renaming operation by selecting `Rename Files`.
 
-> Note that if you want to change back from new names (in column D) to old names (columns B+C), you can set up the `🌊 Workflow renaming direction` parameter to `Reversed 👈`. Otherwise let it to `Normal 👉`.
+> Note that if you want to change back from new names (in column D) to old names (columns B+C), you can tick the `⏳ Reverse names` checkbox`.
 
 ![rename_params](public/rename_params.webp)
 

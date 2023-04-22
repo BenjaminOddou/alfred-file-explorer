@@ -71,7 +71,7 @@ elif _level == 1:
             }
         },
         {
-            'title': 'Safe renaming parameter',
+            'title': 'Safe renaming',
             'subtitle': 'Yes 👍' if safe_guard else 'No 👎',
             'arg': '',
             'icon': {
@@ -79,11 +79,11 @@ elif _level == 1:
             }
         },
         {
-            'title': 'Workflow renaming direction parameter',
-            'subtitle': 'Reversed 👈' if reverse_dir else 'Normal 👉',
+            'title': 'Reverse names',
+            'subtitle': 'Yes 👍' if reverse_dir else 'No 👎',
             'arg': '',
             'icon': {
-                'path': 'icons/wave.webp'
+                'path': 'icons/time.webp'
             }
         },
         {

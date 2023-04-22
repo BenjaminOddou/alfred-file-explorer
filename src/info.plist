@@ -1065,7 +1065,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The folder that holds all the generated .xlsx and .log files.</string>
+			<string>the folder that holds all the generated .xlsx and .log files.</string>
 			<key>label</key>
 			<string>📂 Data folder</string>
 			<key>type</key>
@@ -1086,7 +1086,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Value of the first flow trigger.</string>
+			<string>value of the first flow trigger.</string>
 			<key>label</key>
 			<string>🕹️ Trigger 1</string>
 			<key>type</key>
@@ -1107,7 +1107,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Input a value between 1 and ∞.</string>
+			<string>input a value between 1 and ∞. this allows to list element in nested folders.</string>
 			<key>label</key>
 			<string>🔍 Depth of the search</string>
 			<key>type</key>
@@ -1128,7 +1128,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Maxiumum number of element per worksheet. Can't be higher than 1 048 575.</string>
+			<string>maxiumum number of element per worksheet. can't be higher than 1 048 575.</string>
 			<key>label</key>
 			<string>⚡Worksheet limit</string>
 			<key>type</key>
@@ -1149,7 +1149,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<integer>3</integer>
 			</dict>
 			<key>description</key>
-			<string>Reject files that matches regex expression. Let it empty if you want to include all files. Here is a good way to exclude common hidden files : ^\.|^\~|desktop\.ini</string>
+			<string>reject files that matches regex expression. let it empty if you want to include all files. here is a good way to exclude common hidden files : ^\.|^\~|desktop\.ini</string>
 			<key>label</key>
 			<string>🚫 Reject Files</string>
 			<key>type</key>
@@ -1170,7 +1170,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Value of the second trigger flow.</string>
+			<string>value of the second trigger flow.</string>
 			<key>label</key>
 			<string>🕹️ Trigger 2</string>
 			<key>type</key>
@@ -1182,25 +1182,18 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>True</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>Yes 👍</string>
-						<string>True</string>
-					</array>
-					<array>
-						<string>No 👎</string>
-						<string>False</string>
-					</array>
-				</array>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
 			</dict>
 			<key>description</key>
-			<string>If this is desactivated, you'll have the possibility to modify file extensions. This can be useful if you want to rename all your .jpg into .JPEG for example. Use it at your own risks.</string>
+			<string>if this is desactivated, you'll have the possibility to modify file extensions. this can be useful if you want to rename all your .jpg into .JPEG for example. use it at your own risks.</string>
 			<key>label</key>
 			<string>🛡️ Safe renaming</string>
 			<key>type</key>
-			<string>popupbutton</string>
+			<string>checkbox</string>
 			<key>variable</key>
 			<string>safe_guard</string>
 		</dict>
@@ -1208,25 +1201,18 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>False</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>Normal 👉</string>
-						<string>False</string>
-					</array>
-					<array>
-						<string>Reversed 👈</string>
-						<string>True</string>
-					</array>
-				</array>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
 			</dict>
 			<key>description</key>
-			<string>If reversed is selected, new names (in column D), will be remaned backward to original names.</string>
+			<string>if ticked, new names (in column D), will be remaned backward to original names.</string>
 			<key>label</key>
-			<string>🌊 Workflow renaming direction</string>
+			<string>⏳ Reverse names</string>
 			<key>type</key>
-			<string>popupbutton</string>
+			<string>checkbox</string>
 			<key>variable</key>
 			<string>reverse_dir</string>
 		</dict>
@@ -1256,7 +1242,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Choose output action.</string>
+			<string>choose output action.</string>
 			<key>label</key>
 			<string>🔫 Workflow action</string>
 			<key>type</key>
@@ -1338,7 +1324,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Workflow notification sound.</string>
+			<string>workflow notification sound.</string>
 			<key>label</key>
 			<string>🎷 Notification sound</string>
 			<key>type</key>
@@ -1347,10 +1333,8 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 			<string>sound</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2.3</string>
+	<string>2.3.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/BenjaminOddou/alfred-file-explorer</string>
 </dict>
