@@ -18,10 +18,11 @@ if '_lib' in os.environ:
 if _level == 0:
     for file_path in files:
         file = Path(file_path)
+        universal_path = os.path.dirname(file_path).replace(os.path.expanduser('~'), '~')
         creation_time = datetime.datetime.fromtimestamp(file.stat().st_birthtime)
         item = {
             'title': file.name,
-            'subtitle': f'{get_size_string(file.stat().st_size)} ǀ {file_path}',
+            'subtitle': f'{get_size_string(file.stat().st_size)} ǀ {universal_path}',
             'arg': f'_rerun;1;{file_path};{file.name};{get_size_string(file.stat().st_size)}',
             'autocomplete': file.name,
             'icon': {
@@ -31,11 +32,11 @@ if _level == 0:
             'mods': {
                 'cmd': {
                     'subtitle': 'Press ⏎ to reveal the workbook in the finder',
-                    'arg': f'_reveal;{file_path}',
+                    'arg': f'_reveal;{universal_path}',
                 },
                 'alt': {
                     'subtitle': 'Press ⏎ to open the workbook in the default app',
-                    'arg': f'_open;{file_path}',
+                    'arg': f'_open;{universal_path}',
                 }
             }
         }

@@ -2,7 +2,7 @@ import os
 import sys
 import math
 sys.path.insert(0, './lib')
-from lib import openpyxl
+import openpyxl
 
 # Workflow variables
 data_folder = os.path.expanduser('~/Library/Application Support/Alfred/Workflow Data/com.benjamino.file_explorer')

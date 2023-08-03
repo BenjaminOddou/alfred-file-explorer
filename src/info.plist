@@ -1151,7 +1151,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 			<key>description</key>
 			<string>reject files that matches regex expression. let it empty if you want to include all files. here is a good way to exclude common hidden files : ^\.|^\~|desktop\.ini</string>
 			<key>label</key>
-			<string>🚫 Reject Files</string>
+			<string>🚫 Reject files</string>
 			<key>type</key>
 			<string>textarea</string>
 			<key>variable</key>
@@ -1334,7 +1334,7 @@ Go to the dedicated [GitHub repository](https://github.com/BenjaminOddou/alfred-
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.3.1</string>
+	<string>2.3.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/BenjaminOddou/alfred-file-explorer</string>
 </dict>
