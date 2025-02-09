@@ -93,7 +93,7 @@ for i in range(num_sheets):
 wb.save(temp_file)
 wb.close()
 
-result = subprocess.call(['osascript', '-e', 'tell application "Finder" to open POSIX file "{}"'.format(temp_file)])
+result = subprocess.call(["open", temp_file])
 time.sleep(1)
 if result == 0:
     display_notification('✅ Success !', 'File created, you can now edit new filenames in column D')
